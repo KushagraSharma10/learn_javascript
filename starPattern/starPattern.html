@@ -48,6 +48,12 @@
       document.getElementById("submit").addEventListener("click", function () {
         document.getElementById("result").innerHTML =  printStars(index);
       });
+
+      document.getElementById("clear").addEventListener("click", function () {
+        document.getElementById("number").value = "";
+        document.getElementById("result").innerHTML = "";
+      });
+
     </script>
   </body>
 </html>
