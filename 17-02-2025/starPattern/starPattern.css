@@ -74,6 +74,7 @@ html,body{
     border-radius: .5vw;
     font-size: .9em;
     font-weight: 500;
+    cursor: pointer;
     border: none;
     outline: none;
     letter-spacing: .03em;
@@ -81,12 +82,12 @@ html,body{
 }
 
 .buttons #clear{
-    background-color: #FF9800  ;
+    background-color: #ff3700  ;
     color: white;
     padding: .5vw 2vw;
     border-radius: .5vw;
     font-size: .9em;
-
+    cursor: pointer;
     border: none;
     outline: none; 
     letter-spacing: .03em;
@@ -96,7 +97,7 @@ html,body{
     background-color: #45a049; /* Darker green */
 }
 #clear:hover {
-    background-color: #FB8C00; /* Darker orange */
+    background-color: #fb0000; /* Darker orange */
 }
 
 
