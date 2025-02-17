@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    /* padding: 5vw; */
+}
+
+
+.container {
+    padding: 5vw;
+}
+
+.container ul{
+    /* list-style-type: none; */
+    padding: 2vw;
+}
+
+.container ul li {
+    cursor: pointer;
+    
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: black;
+}
