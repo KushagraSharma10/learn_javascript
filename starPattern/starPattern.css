@@ -13,7 +13,7 @@ html,body{
 .main {
     height: 100%;
     width: 100%;
-    background-color: rgb(24, 23, 23);
+    background-color: #ECECEC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ html,body{
 
 .container{
     width: 40vw;
-    background-color: red;
+    /* background-color: red; */
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ html,body{
 .user-input #number{
     width: 60%;
     /* font-size: 1rem; */
-    padding: .5vw 1vw;
+    padding: .8vw 1vw;
     border-radius: .5vw;
     border: none;
     outline: none;
@@ -53,28 +53,36 @@ html,body{
 }
 
 .buttons #submit{
-    background-color: rgb(255, 102, 0);
-    color: white;
+    background-color: #34C759 ;
+    color: #FFFFFF;
     padding: .5vw 2vw;
     border-radius: .5vw;
+    font-size: .9em;
+    font-weight: 500;
     border: none;
     outline: none;
+    letter-spacing: .03em;
 
 }
 
 .buttons #clear{
-    background-color: rgb(255, 153, 0);
+    background-color: #FF9800  ;
     color: white;
     padding: .5vw 2vw;
     border-radius: .5vw;
     border: none;
     outline: none; 
+    letter-spacing: .03em;
 }
 
 
-.result{
+#result{
+    padding: 3vw;
     width: 100%;
-    height: 30vh;
-    background-color: rgb(186, 186, 15);
+    border-radius: .6vw;
+    /* height: 30vh; */
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
 }

@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Pattern</title>
-    <link rel="stylesheet" href="starPattern.css">
-</head>
+    <link rel="stylesheet" href="starPattern.css" />
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="container">
-            <div class="user-input">
-                <input id="number" type="number" placeholder="Enter a Number">
-                <div class="buttons">
-                    <input id="submit" type="button" value="submit">
-                    <input id="clear" type="button" value="clear">
-                </div>
-            </div>
-            <div class="result">
-
-            </div>
+      <div class="container">
+        <div class="user-input">
+          <input id="number" type="number" placeholder="Enter a Number" />
+          <div class="buttons">
+            <input id="submit" type="button" value="Submit" />
+            <input id="clear" type="button" value="Clear" />
+          </div>
         </div>
+        <div id="result"></div>
+      </div>
     </div>
 
     <script>
-        let index = document.getElementById("number").addEventListener("input", function () {
-            index = this.value;
+    //   let index = 0;
+      index = document
+        .getElementById("number")
+        .addEventListener("input", function () {
+          index = this.value;
         });
 
-        function printStars(index){
-           
-            for(let i = 1; i<=index; i++){
-                let str = '';
-                for(let j = 1; j<=i; j++){
-                    str += '* ';
-                }
-                console.log(str);
-            }
-            
-
+      function printStars(index) {
+        if(index <= 0){
+            return "Please enter a positive integer greater than 0."
         }
 
-        document.getElementById()
+        let result = ""
+        for (let i = 1; i <= index; i++) {
+          let str = "";
+          for (let j = 1; j <= i; j++) {
+            str += "* ";
+          }
+          console.log(str);
+          result += str + "<br>";
+        }
+        return result
+      }
 
-        
-
+      document.getElementById("submit").addEventListener("click", function () {
+        document.getElementById("result").innerHTML = printStars(index);
+      });
     </script>
-</body>
-
+  </body>
 </html>
