@@ -22,17 +22,20 @@ html,body{
 
 .container{
     width: 40vw;
-    /* background-color: red; */
+    background-color: #fff;
     padding: 2vw;
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    border-radius: 0.6vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .user-input{
     width: 100%;
     /* background-color: blue; */
     display: flex;
+    
     align-items: center;
     gap: 2vw;
 }
@@ -42,7 +45,7 @@ html,body{
     /* font-size: 1rem; */
     padding: .8vw 1vw;
     border-radius: .5vw;
-    border: none;
+    border: 1px solid #E0E0E0;
     outline: none;
 
 }
@@ -70,9 +73,18 @@ html,body{
     color: white;
     padding: .5vw 2vw;
     border-radius: .5vw;
+    font-size: .9em;
+
     border: none;
     outline: none; 
     letter-spacing: .03em;
+}
+
+#submit:hover {
+    background-color: #45a049; /* Darker green */
+}
+#clear:hover {
+    background-color: #FB8C00; /* Darker orange */
 }
 
 
