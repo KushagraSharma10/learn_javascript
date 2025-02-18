@@ -19,13 +19,12 @@ This project allows users to input a number and generate a star pattern dynamica
 ## Example Output
 
 For input `5`, the output pattern will be:
-
 ```
-    *
-    * *
-    * * *
-    * * * *
-    * * * * *
+*
+* *
+* * *
+* * * *
+* * * * *
 ```
 
 
@@ -56,15 +55,15 @@ This project is a simple Star Pattern Generator built using HTML, CSS, and JavaS
 For input `5`, the output pattern will be:
 
 ```
-    *
-    * *
-    * * *
-    * * * *
-    * * * * *
-    * * * *
-    * * *
-    * *
-    *
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
 ```
 
 You can Checkout Project on [Star Pattern 2](https://learn-javascript-chi.vercel.app/18-02-2025/starPattern2/starPattern2.html)
