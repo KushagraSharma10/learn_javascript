@@ -15,7 +15,21 @@ This project allows users to input a number and generate a star pattern dynamica
 ✔ Clicking Clear resets both the input and the output.
 
 
-You can Checkout Project on [Star Pattern](https://learn-javascript-chi.vercel.app/17-02-2025/starPattern/starPattern.html)
+
+## Example Output
+
+For input `5`, the output pattern will be:
+
+```
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+```
+
+
+You can Checkout Project on [Star Pattern 1](https://learn-javascript-chi.vercel.app/17-02-2025/starPattern/starPattern.html)
 
 
 
@@ -51,5 +65,6 @@ For input `5`, the output pattern will be:
     * * *
     * *
     *
-
 ```
+
+You can Checkout Project on [Star Pattern 2](https://learn-javascript-chi.vercel.app/18-02-2025/starPattern2/starPattern2.html)
