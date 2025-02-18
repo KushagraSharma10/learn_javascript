@@ -42,13 +42,13 @@ This project is a simple Star Pattern Generator built using HTML, CSS, and JavaS
 
 # Features
 
-Accepts user input for the number of rows in the pattern.
+1. Accepts user input for the number of rows in the pattern.
 
-Dynamically generates and displays a symmetrical star pattern.
+2. Dynamically generates and displays a symmetrical star pattern.
 
-Includes a "Submit" button to generate the pattern.
+3. Includes a "Submit" button to generate the pattern.
 
-Includes a "Clear" button to reset the input and result.
+4. Includes a "Clear" button to reset the input and result.
 
 
 ## Example Output
