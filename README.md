@@ -69,7 +69,7 @@ For input `5`, the output pattern will be:
 You can Checkout Project on [Star Pattern 2](https://learn-javascript-chi.vercel.app/18-02-2025/starPattern2/starPattern2.html)
 
 
-# Date - 18-02-2025
+# Date - 19-02-2025
 
 # Star Pattern Generator
 # Project Description
@@ -93,11 +93,11 @@ This project is a web-based application that allows users to generate a hollow p
 
 1. The hollowPyramid function generates the pyramid using nested loops:
 
-a) The outer loop runs from 1 to the entered number, representing each row.
+    a) The outer loop runs from 1 to the entered number, representing each row.
 
-b) The first inner loop adds spaces to align the pyramid.
+    b) The first inner loop adds spaces to align the pyramid.
 
-c) The second inner loop prints * at the borders and spaces in between. 
+    c) The second inner loop prints * at the borders and spaces in between. 
 
 2. The input event updates the index variable with the entered value.
 
