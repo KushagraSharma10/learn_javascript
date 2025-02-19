@@ -1,4 +1,3 @@
-
 let index = document
 .getElementById("number").value
 

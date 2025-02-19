@@ -67,3 +67,56 @@ For input `5`, the output pattern will be:
 ```
 
 You can Checkout Project on [Star Pattern 2](https://learn-javascript-chi.vercel.app/18-02-2025/starPattern2/starPattern2.html)
+
+
+# Date - 18-02-2025
+
+# Star Pattern Generator
+# Project Description
+
+This project is a web-based application that allows users to generate a hollow pyramid star pattern by entering a number. The number entered by the user determines the number of rows in the pyramid. The application is built using HTML, CSS, and JavaScript, providing a simple and interactive interface.
+
+# Features
+
+1. Responsive and clean user interface
+
+2. Input field to enter the number of rows
+
+3. Display area to show the generated pyramid pattern
+
+4. Submit button to generate the pattern
+
+5. Clear button to reset the input and output
+
+
+# Code Explanation
+
+1. The hollowPyramid function generates the pyramid using nested loops:
+
+a) The outer loop runs from 1 to the entered number, representing each row.
+
+b) The first inner loop adds spaces to align the pyramid.
+
+c) The second inner loop prints * at the borders and spaces in between. 
+
+2. The input event updates the index variable with the entered value.
+
+3. The click event of the Submit button calls the hollowPyramid function and displays the output.
+
+4. The Clear button resets both the input field and the output.
+
+
+
+## Example Output
+
+For input `5`, the output pattern will be:
+
+```
+    * 
+   * * 
+  *   * 
+ *     * 
+* * * * * 
+```
+
+You can Checkout Project on [Hollow Pyramid](https://learn-javascript-chi.vercel.app/18-02-2025/starPattern2/starPattern2.html)
