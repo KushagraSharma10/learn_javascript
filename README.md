@@ -118,3 +118,48 @@ For input `5`, the output pattern will be:
 ```
 
 You can Checkout Project on [Hollow Pyramid](https://learn-javascript-chi.vercel.app/18-02-2025/starPattern2/starPattern2.html)
+
+
+
+# Date - 20-02-2025
+
+# Tic-Tac-Toe Game
+# Description
+
+This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. Players take turns entering their inputs (X or O) in the desired box, and the game checks for a winner based on standard Tic-Tac-Toe rules. The first player to align three identical symbols (horizontally, vertically, or diagonally) wins the game.
+
+# Features
+
+1. User-friendly interface
+
+2. Input prompt to select a box number
+
+3. Interactive buttons to choose between X and O
+
+4. Visual indication of the winning combination
+
+5. Automatic game reset upon a win
+
+
+# How to Play
+
+1. Click on the Enter Input button.
+
+2. Enter the box number (0-8) where you want to place your symbol.
+
+3. Click the X or O button to place your symbol.
+
+4. The game highlights the winning combination and displays an alert with the winner's name.
+
+5. The game resets automatically after a win.
+
+# Box Numbering Reference
+
+```
+ 0 | 1 | 2
+-----------
+ 3 | 4 | 5
+-----------
+ 6 | 7 | 8
+```
+
