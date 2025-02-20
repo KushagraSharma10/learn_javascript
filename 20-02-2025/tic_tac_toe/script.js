@@ -112,7 +112,7 @@ function clickO() {
         return;
       }
       boxes[UserInput] = "O";
-      let drawBox = box[user].querySelector(".draw");
+      let drawBox = box[UserInput].querySelector(".draw");
       drawBox.textContent = "O";
       if (checkWinner("O")) {
         setTimeout(function () {
