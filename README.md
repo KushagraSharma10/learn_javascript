@@ -78,15 +78,13 @@ This project is a web-based application that allows users to generate a hollow p
 
 # Features
 
-1. Responsive and clean user interface
+1. Input field to enter the number of rows
 
-2. Input field to enter the number of rows
+2. Display area to show the generated pyramid pattern
 
-3. Display area to show the generated pyramid pattern
+3. Submit button to generate the pattern
 
-4. Submit button to generate the pattern
-
-5. Clear button to reset the input and output
+4. Clear button to reset the input and output
 
 
 # Code Explanation
