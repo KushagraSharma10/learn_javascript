@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./fonts/PlusJakartaSans-Regular.woff");
+}
+
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("./fonts/PlusJakartaSans-Regular.woff2");
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212020;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+.tic-tac-toe{
+    width: 30vw;
+    height: 30vw;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    position: relative;
+    width: 9.97vw;
+    height: 10vw;
+    background-color: rgb(28, 24, 31);
+    border: 1px solid #2f2323;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+}
+
+.box span{ 
+    position: absolute;
+    top: .5vw;
+    left: .5vw;
+    transform: translate(-50%, -50%);
+    /* font-size: 2vw; */
+    font-weight: 600;
+
+}
+
+.box .draw{
+    height: 1vw;
+    width: 1vw;
+}
+
+/* .tic-tac-toe :nth-child(2) .draw{
+    /* background-color: red; */
+ 
+
+#insertNum{
+    padding: .7vw 1vw;
+    width: 100%;
+    border-radius: .4vw;
+    border:1px solid #000;
+    outline: none;
+}
+
+#insertNum::placeholder{
+    /* font-size: .5vw; */
+    font-weight: 600;
+}
+
+.buttons{
+    /* width: 100%; */
+    display: flex;
+    gap: 1vw;
+}
+
+.buttons button{
+    padding:.7vw 1vw;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    border-radius: .3vw;
+    
+}
+
+.buttons #X{
+    background-color: skyblue;
+    font-weight: 600;
+}
+
+
+.buttons #X:hover{
+    background-color: rgb(82, 183, 223);
+    font-weight: 600;
+    transition: .7s ease-in-out;
+    cursor: pointer;
+}
+
+.buttons #O{
+    background-color: rgb(241, 180, 68);
+    font-weight: 600;
+}
+
+
+.buttons #O:hover{
+    background-color: rgb(219, 177, 98);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .7s ease-in-out
+}
