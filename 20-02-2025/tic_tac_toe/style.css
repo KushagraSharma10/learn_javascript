@@ -7,13 +7,13 @@
 
 @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("./fonts/PlusJakartaSans-Regular.woff");
+    src: url("../../fonts/PlusJakartaSans-Regular.woff");
 }
 
 
 @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("./fonts/PlusJakartaSans-Regular.woff2");
+    src: url("../../fonts/PlusJakartaSans-Regular.woff2");
 }
 
 html, body{

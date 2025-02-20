@@ -5,13 +5,48 @@ let index = 0;
 let box = document.getElementsByClassName("box");
 let buttonX = document.getElementById("X");
 let buttonO = document.getElementById("O");
-let inputField = document.getElementById("insertNum"); // Reference to the input field
+// let inputField = document.getElementById("insertNum"); // Reference to the input field
+let inputBtn = document.querySelector("#inputBtn")
+
+
+// index = inputField.addEventListener("input", function () {
+//   index = parseInt(this.value);
+// });
+
+let UserInput;
+
+
+
+
+function handleInput(){
+  let inputResult = prompt("Enter the input")
+  UserInput = parseInt(inputResult)
+
+  
+if(inputResult !== null){
+
+  let selectBox = box[inputResult]
+  selectBox.style.backgroundColor = "grey"
+  console.log(selectBox)
+  // console.log(inputResult)
+} else{
+  let confirmText = confirm("Are you sure you don't want to give Input")
+  console.log(confirmText)
+
+  if(confirmText === false){
+    handleInput()
+  } else{
+    return
+  }
+  
+}
+
+}
+
+inputBtn.addEventListener("click", handleInput)
 
 let currentPlayer = "X";
 
-index = inputField.addEventListener("input", function () {
-  index = parseInt(this.value);
-});
 
 function checkWinner(player) {
   const winCombos = [
@@ -44,13 +79,13 @@ function checkWinner(player) {
 
 function clickX() {
   buttonX.addEventListener("click", function () {
-    if (index >= 0 && index < 9) {
-      if (boxes[index] !== "") {
+    if (UserInput >= 0 && UserInput < 9) {
+      if (boxes[UserInput] !== "") {
         alert("This box is already filled!");
         return;
       }
-      boxes[index] = "X";
-      let drawBox = box[index].querySelector(".draw");
+      boxes[UserInput] = "X";
+      let drawBox = box[UserInput].querySelector(".draw");
       drawBox.textContent = "X";
 
       if (checkWinner("X")) {
@@ -71,13 +106,13 @@ function clickX() {
 function clickO() {
   buttonO.addEventListener("click", function () {
     if (index >= 0 && index < 9) {
-      if (boxes[index] !== "") {
+      if (boxes[UserInput] !== "") {
         alert("This box is already filled!");
         inputField.value = "";
         return;
       }
-      boxes[index] = "O";
-      let drawBox = box[index].querySelector(".draw");
+      boxes[UserInput] = "O";
+      let drawBox = box[user].querySelector(".draw");
       drawBox.textContent = "O";
       if (checkWinner("O")) {
         setTimeout(function () {

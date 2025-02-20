@@ -1,11 +1,6 @@
 let index = document
 .getElementById("number").value
 
-
-
-
-
-
 function hollowPyramid(index){
     
     let output = ""
