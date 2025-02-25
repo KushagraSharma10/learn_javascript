@@ -7,7 +7,7 @@
   let box = document.getElementsByClassName("box");
   let buttonX = document.getElementById("X");
   let buttonO = document.getElementById("O");
-  let inputField = document.getElementById("insertNum"); // Reference to the input field
+  let inputField = document.getElementById("insertNum"); 
   let errorMessage = document.getElementById("error-message");
 
   let currentPlayer = "X";
