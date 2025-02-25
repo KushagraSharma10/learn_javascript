@@ -168,21 +168,27 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. Players
 # Infinite Tic-Tac-Toe
 # Description
 
-This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. Players can take turns placing X or O in the boxes, and the game highlights the winning combination.
+This is a fun and interactive Infinite Tic-Tac-Toe game built with HTML, CSS, and JavaScript. Unlike the classic version, this game keeps going until one player makes a line of three symbols horizontally, vertically, or diagonally.
 
 # Features
 
-1. Interactive Tic-Tac-Toe board with 9 boxes.
+1. Simple game board with 9 clickable boxes.
 
-2. Players can input the box number to place their symbol.
+2. Infinite gameplay that continues until someone wins.
 
-3. X and O buttons to mark the boxes.
+3. Players can enter a number (0-8) to choose a box.
 
-4. Game highlights the winning combination in green.
+4. Separate buttons for X and O moves.
 
-5. Automatic reload after a player wins.
+5. Winning line is highlighted in green.
 
-6. Input validation ensures only numbers between 0-8 are allowed.
+6. The game reloads automatically after someone wins.
+
+7. Only numbers between 0-8 are accepted, with an error message for invalid entries.
+
+8. When the total moves reach six, the oldest move is removed to keep the game flowing.
+
+9. X and O buttons are enabled one at a time, ensuring only one player can move each turn.
 
 # Recent Changes
 
@@ -192,7 +198,7 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. Players
 
 3. Improved Turn Logic: Disabled the O button when it's X's turn and vice versa.
 
-# Usage
+# How to Play
 
 1. Clone the repository.
 
@@ -201,3 +207,5 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. Players
 3. Enter the box number (0-8) in the input field.
 
 4. Click the X or O button to mark the box.
+
+5. Keep playing until someone wins!
