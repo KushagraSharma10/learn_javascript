@@ -209,3 +209,43 @@ This is a fun and interactive Infinite Tic-Tac-Toe game built with HTML, CSS, an
 4. Click the X or O button to mark the box.
 
 5. Keep playing until someone wins!
+
+
+
+
+# Date - 26-02-2025
+
+# Student Scorecard
+# description
+
+This project is a simple Student Scorecard web application that allows users to enter marks for different subjects and calculates the total marks and percentage. Based on the percentage obtained, it classifies the student's performance into different divisions.
+
+# Features
+
+1. Input student name
+
+2. Input marks for 5 subjects (Hindi, English, Maths, Social Science, Computer)
+
+3. Validate input marks to ensure they are between 0 and 100
+
+4. Display total marks dynamically
+
+5. Calculate and display percentage classification
+
+6. Show alerts for invalid inputs and missing student name
+
+# Functionality Breakdown
+
+1. JavaScript Functions
+
+    1. getMarks() Functions: Retrieve marks for each subject and ensure valid input.
+
+    2. calculateTotalMarks(): Computes and updates the total marks dynamically.
+
+    3. calculatePercentage(): Calculates percentage and classifies student performance.
+
+2. Validation
+
+    1. Prevents negative or out-of-range marks (0-100)
+
+    2. Ensures the student name is entered before displaying the result
