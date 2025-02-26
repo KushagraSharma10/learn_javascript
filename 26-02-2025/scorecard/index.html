@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreCard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="title">Student Scorecard</h1>
+            <div class="student">
+                <label for="name">Student Name</label>
+                <input type="text" id="name">
+            </div>    
+            <table>
+                <thead>
+                        <tr class="heading">
+                            <th>Student Details</th>
+                            <th>Marks</th>
+                        </tr>
+                        <tr>
+                            <td>Hindi</td>
+                            <td><input type="number" id="Hindi" min="0" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td><input type="number" id="English" min="0" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td><input type="number" id="maths" min="0" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td>Social Science</td>
+                            <td><input type="number" id="Social" min="0" max="100"></td>
+                        </tr>
+                        <tr class="Computer">
+                            <td>Computer</td>
+                            <td><input type="number" id="Comp" min="0" max="100"></td>
+                        </tr>
+                    </tbody>
+                    
+                </thead>
+            </table>
+            <div class="total">
+                <h2>Total&nbsp;Marks</h2>
+                <p id="totalMarks"></p>
+            </div>
+            <button>Show &nbsp;Result</button>
+        </div>
+       
+    </main>
+</body>
+</html>
