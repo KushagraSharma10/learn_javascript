@@ -19,7 +19,7 @@ nameField.addEventListener("input", function(){
 
 function getHindiMarks(){
     return parseInt(HindiField.value) || 0
-} 
+}
 
 function getEnglishMarks(){
     return parseInt(EnglishField.value) || 0
@@ -33,7 +33,6 @@ function getSocialMarks(){
 function getCompMarks(){
     return parseInt(ComputerField.value) || 0
 }
-
 
 function calculateTotalMarks(){
     totalMarks = getHindiMarks() + getEnglishMarks() + getMathsMarks() + getSocialMarks() + getCompMarks()
@@ -49,8 +48,6 @@ function calculatePercentage(){
     fixedPercent = percentage.toFixed(2);
     console.log(fixedPercent)
 
-   
-
     if(fixedPercent>= 90){
         alert(`Hi ${nameInput} you came in merit`)
     } else if( fixedPercent >= 60 && fixedPercent <90){
@@ -59,22 +56,19 @@ function calculatePercentage(){
         alert(`Hi ${nameInput} you passed with 2nd division`)
     } else if(fixedPercent >=33 && fixedPercent < 45){
         alert(`Hi ${nameInput} you passed with 3rd division`)
-    } else if(fixedPercent > 0 && fixedPercent < 33){
+    } else if(fixedPercent >=0 && fixedPercent < 33){
         alert(`Hi ${nameInput} you failed`)
     } else{
-        alert(`Invalid Percentage`)
+        alert(`wrong Percentage`)
     }
 
 }
-
-
 
 HindiField.addEventListener("input", calculateTotalMarks)
 EnglishField.addEventListener("input", calculateTotalMarks)
 MathsField.addEventListener("input", calculateTotalMarks)
 SocialField.addEventListener("input", calculateTotalMarks)
 ComputerField.addEventListener("input", calculateTotalMarks)
-
 
 TableInputs.forEach(input => {
     input.addEventListener("input", (event) => {
@@ -87,5 +81,19 @@ TableInputs.forEach(input => {
     });
 })
 
-
 submitBtn.addEventListener("click", calculatePercentage)
+
+
+// function showPrimes(n) {
+//     nextPrime: for (let i = 2; i < n; i++) {
+
+//       for (let j = 2; j < i; j++) {
+//         if (i % j == 0) continue nextPrime;
+//       }
+
+//       alert( i ); // a prime
+//     }
+//   }
+
+//   showPrimes(20);
+
