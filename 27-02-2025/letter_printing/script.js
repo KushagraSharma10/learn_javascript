@@ -6,7 +6,7 @@ index = document
 
 
 
-        function printStars(index, border = 2) {
+        function printStars(index, border = 5) {
             
             if (index < 5) {
                 return "Please enter a positive integer greater than or equal to 5.";
@@ -39,41 +39,7 @@ index = document
         
             return result;
         }
-        
 
-    
-
-    // printStars(100)
-// function printK(height) {
-//     if (height < 5) {
-//       console.log("Height should be at least 5 for a proper K.");
-//       return;
-//     }
-  
-//     const middle = Math.floor(height / 2);
-  
-//     for (let row = 0; row < height; row++) {
-//       let line = "";
-  
-//       for (let col = 0; col < height; col++) {
-//         if (col === 0) {
-//           line += "*"; // Vertical line
-//         } else if (row < middle && col === middle - row) {
-//           line += "*"; // Upper diagonal
-//         } else if (row > middle && col === row - middle) {
-//           line += "*"; // Lower diagonal
-//         } else {
-//           line += " ";
-//         }
-//       }
-//       console.log(line);
-//     }
-//   }
-  
-//   // Example usage:
-//   printK(10);
-// //   printK();
-// //   printK(11);
 
       document.getElementById("submit").addEventListener("click", function () {
         document.getElementById("result").innerHTML =  printStars(index);
