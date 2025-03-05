@@ -116,12 +116,3 @@ html,body{
     
 }
 
-
-#box{
-    padding:.9vw;
-    text-align: center;
-}
-
-#boxes :nth-child(2){
-    background-color: red;
-}
