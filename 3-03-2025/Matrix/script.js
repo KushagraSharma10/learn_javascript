@@ -9,7 +9,7 @@ let arr = []
 let str;
 function Boxes(index) {
   
-  arr = []; 
+  // arr = []; 
   let output = "";
 
   for (let i = 0; i < index; i++) {
@@ -20,7 +20,7 @@ function Boxes(index) {
     for (let j = 0; j < index; j++) {
       let id = `cell-${i}-${j}`;
       str += `<div class="boxes"><input style = "padding: 1vw; text-align:center"  id= ${id} type = "number"></div>`; 
-      row.push(id); 
+      row.push(0); 
     }
 
     output += `<div style="display: flex;">${str}</div>`;
@@ -100,8 +100,8 @@ document.getElementById("submit").addEventListener("click", function () {
 });
 
 
-document.getElementById("clear").addEventListener("click", function () {
-  document.getElementById("number").value = "";
-  document.getElementById("result").innerHTML = "";
-  arr = []; 
-});
+// document.getElementById("clear").addEventListener("click", function () {
+//   document.getElementById("number").value = "";
+//   document.getElementById("result").innerHTML = "";
+//   arr = []; 
+// });

@@ -1,11 +1,11 @@
 
 
-let arr = ['c', 'e', 'f', 'g', ['a', 'd', 'z']]
+// let arr = ['c', 'e', 'f', 'g', ['a', 'd', 'z']]
 
 
-let flatArr = arr.flat()
-flatArr = flatArr.sort()
-console.log(flatArr)
+// let flatArr = arr.flat()
+// flatArr = flatArr.sort()
+// console.log(flatArr)
 
 
 
