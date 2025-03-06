@@ -84,7 +84,7 @@ html,body{
 
 }
 
-.buttons #clear{
+.buttons #checkMatrix{
     width: 100%;
     background-color: #ff3700  ;
     color: white;
@@ -95,12 +95,13 @@ html,body{
     border: none;
     outline: none; 
     letter-spacing: .03em;
+    /* display: none; */
 }
 
 #submit:hover {
     background-color: #45a049; /* Darker green */
 }
-#clear:hover {
+#checkMatrix:hover {
     background-color: #fb0000; /* Darker orange */
 }
 
@@ -115,4 +116,6 @@ html,body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
 }
+
+
 

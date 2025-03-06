@@ -33,20 +33,32 @@ function addEventListeners() {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       let cell = document.getElementById(`cell-${i}-${j}`);
+
+      let timeout;
+
       cell.addEventListener("input", function () {
-        let value = parseInt(this.value) || null;
+        clearTimeout(timeout); 
+        timeout = setTimeout(() => {
+          let value = parseInt(this.value) || null;
 
-        arr[i][j] = null;
-        if (value === 0) return;
+          if (value <= 0 ) {
+            alert("Please enter a positive number!");
+            this.value = "";
+            return;
+          }
 
-        if (value != null && !isUnique(i, j, value)) {
-          alert(`Value ${value} is already present in row ${i} or column ${j}!`);
-          this.value = "";
-          return;
-        }
+          arr[i][j] = null;
+          if (value === 0) return;
 
-        arr[i][j] = value;
-        console.log(arr);
+          if (value != null && !isUnique(i, j, value)) {
+            alert(`Value ${value} is already present in row ${i} or column ${j}!`);
+            this.value = "";
+            return;
+          }
+
+          arr[i][j] = value;
+          console.log(arr);
+        }, 700); // Delay validation by 300ms
       });
 
       cell.addEventListener("change", function () {
@@ -66,9 +78,9 @@ function sumRow(rowIndex) {
       rowSum += arr[rowIndex][i];
     }
     console.log(`Sum of Row ${rowIndex}: ${rowSum}`);
-  } else {
-    console.log("Invalid row index");
-  }
+    return rowSum
+  } 
+  return 0;
 }
 
 function sumCol(colIndex){
@@ -78,9 +90,9 @@ function sumCol(colIndex){
       colSum += arr[i][colIndex];
     }
     console.log(`Sum of Column ${colIndex}: ${colSum}`);
-  }else {
-    console.log("Invalid column index");
+   return colSum
   }
+  return 0;
 }
 
 
@@ -93,6 +105,8 @@ function isUnique(row, col, value) {
   return true;
 }
 
+
+
 document.getElementById("submit").addEventListener("click", function () {
   document.getElementById("result").innerHTML = Boxes(index);
   addEventListeners();
@@ -100,8 +114,11 @@ document.getElementById("submit").addEventListener("click", function () {
 });
 
 
-// document.getElementById("clear").addEventListener("click", function () {
-//   document.getElementById("number").value = "";
-//   document.getElementById("result").innerHTML = "";
-//   arr = []; 
-// });
+document.getElementById("checkMatrix").addEventListener("click", function () {
+  let matrixSize = arr.length;
+
+  for (let i = 0; i < matrixSize; i++) {
+    sumRow(i);
+    sumCol(i);
+  }
+});
